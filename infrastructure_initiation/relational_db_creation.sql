@@ -1,0 +1,10 @@
+IF NOT EXISTS (
+    SELECT name 
+    FROM sys.databases 
+    WHERE name = N'ORDERS_RELATIONAL_DB'
+)
+BEGIN
+    CREATE DATABASE ORDERS_RELATIONAL_DB;
+END;
+
+
